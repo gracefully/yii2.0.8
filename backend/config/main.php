@@ -60,24 +60,8 @@ return [
         'allowActions' => [
             //这里是允许访问的action
             //controller/action
-            'admin/route/index',
-            'admin/route/assign',
-            'admin/route/remove',
-            'debug/default/toolbar',
-            'admin/permission/index',
-            'admin/permission/create',
-            'admin/user/index',
-            'admin/role/index',
-            'admin/assignment/index',
-            'admin/assignment/view',
-            'admin/menu/index',
-            'admin/role/create',
-            'site/logout',
-            'site/index',
-            'admin/menu/index',
-            'admin/menu/create',
-            'admin/menu/view',
-            'admin/menu/update',
+//            'site/*',
+//            'admin/*',
         ]
     ],
     'params' => $params,
