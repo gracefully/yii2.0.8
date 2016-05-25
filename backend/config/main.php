@@ -47,7 +47,7 @@ return [
                 'menu_del/<id:\d+>'=>'admin/menu/delete',
                 'role/<id:\w+>'=>'admin/role/view',
                 'role_update/<id:\w+>'=>'admin/role/update',
-                'role_del/<id:\w+>'=>'admin/role/delete',
+
             ],
         ],
         "authManager" => [
