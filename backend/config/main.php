@@ -39,7 +39,15 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'suffix'=>'.html',
             'rules' => [
+                'assign/<id:\d+>'=>'admin/assignment/view',
+                'menu/<id:\d+>'=>'admin/menu/view',
+                'menu_update/<id:\d+>'=>'admin/menu/update',
+                'menu_del/<id:\d+>'=>'admin/menu/delete',
+                'role/<id:\w+>'=>'admin/role/view',
+                'role_update/<id:\w+>'=>'admin/role/update',
+                'role_del/<id:\w+>'=>'admin/role/delete',
             ],
         ],
         "authManager" => [
