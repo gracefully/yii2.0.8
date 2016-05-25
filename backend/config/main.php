@@ -41,13 +41,15 @@ return [
             'showScriptName' => false,
             'suffix'=>'.html',
             'rules' => [
-                'assign/<id:\d+>'=>'admin/assignment/view',
-                'menu/<id:\d+>'=>'admin/menu/view',
-                'menu_update/<id:\d+>'=>'admin/menu/update',
-                'menu_del/<id:\d+>'=>'admin/menu/delete',
-                'role/<id:\w+>'=>'admin/role/view',
-                'role_update/<id:\w+>'=>'admin/role/update',
-
+//                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+//                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<module>/<controller>/<action>',
+//                'assign/<id:\d+>'=>'admin/assignment/view',
+//                'menu/<id:\d+>'=>'admin/menu/view',
+//                'menu_update/<id:\d+>'=>'admin/menu/update',
+//                'menu_del/<id:\d+>'=>'admin/menu/delete',
+//                'role/<id:\w+>'=>'admin/role/view',
+//                'role_update/<id:\w+>'=>'admin/role/update',
             ],
         ],
         "authManager" => [
