@@ -74,6 +74,10 @@ return [
             'admin/role/create',
             'site/logout',
             'site/index',
+            'admin/menu/index',
+            'admin/menu/create',
+            'admin/menu/view',
+            'admin/menu/update',
         ]
     ],
     'params' => $params,
