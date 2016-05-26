@@ -44,12 +44,6 @@ return [
 //                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 //                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                 '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<module>/<controller>/<action>',
-//                'assign/<id:\d+>'=>'admin/assignment/view',
-//                'menu/<id:\d+>'=>'admin/menu/view',
-//                'menu_update/<id:\d+>'=>'admin/menu/update',
-//                'menu_del/<id:\d+>'=>'admin/menu/delete',
-//                'role/<id:\w+>'=>'admin/role/view',
-//                'role_update/<id:\w+>'=>'admin/role/update',
             ],
         ],
         "authManager" => [
@@ -68,7 +62,7 @@ return [
         //ACF肯定是要加的，因为粗心导致该配置漏掉了，很是抱歉
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            //这里是允许访问的action
+            //这里是允许访问的action，在加入yii2-admin后，暂时允许放开site和admin下的权限
             //controller/action
 //            'site/*',
 //            'admin/*',
