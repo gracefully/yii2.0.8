@@ -4,7 +4,7 @@ use dmstr\widgets\Alert;
 
 ?>
 <div class="content-wrapper">
-    <section class="content-header">
+    <section class="content-header" style="display: none;">
         <?php if (isset($this->blocks['content-header'])) { ?>
             <h1><?= $this->blocks['content-header'] ?></h1>
         <?php } else { ?>
@@ -20,13 +20,15 @@ use dmstr\widgets\Alert;
                 } ?>
             </h1>
         <?php } ?>
-
+    </section>
+    <section>
         <?=
         Breadcrumbs::widget(
             [
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]
-        ) ?>
+        )
+        ?>
     </section>
 
     <section class="content">
